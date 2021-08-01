@@ -1,0 +1,43 @@
+.photosession{
+    margin-top: 39px;
+    .container {
+        @extend %container;
+    }
+    &__inner{
+        display: grid;
+        grid-template-columns: 1fr;
+        // grid-template-rows: 67px 437px 1fr;
+    }
+    &__title{
+        @include text(28px, 400, 34px, $textColor);
+        text-align: center;
+        margin-bottom: 13px;
+        max-width: 197px;
+
+    }
+    &__img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    &__text{
+        @include text(14px, 400, 20px, $textColor);
+        margin: 30px 0 31px;
+    }
+    &__list{
+        @include text(14px, 500, 20px, $textColor);
+    }
+    &__item{
+        list-style-type: none;
+        margin-bottom: 27px;
+        display: flex;
+        align-items: center;
+        &:last-child{
+            margin-bottom: none;
+        }
+    }
+    &__icon{
+        margin-right: 17px;
+    }
+
+}
