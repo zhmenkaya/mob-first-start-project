@@ -6,3 +6,17 @@ $textColor: #37373F;
 $textColorLight: #B3B3B3;
 $linkColor: #5286EC;
 
+%container{
+    width: 100%;
+    padding: 0 15px;
+    border: 1px solid red;
+    max-width:1140px;
+    margin:0 auto;
+    @media screen and (min-width:576px) {
+        padding: 0 35px;            
+    }
+    @media screen and (min-width:768px) {
+        padding: 0 50px;           
+    }
+}
+
