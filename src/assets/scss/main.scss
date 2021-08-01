@@ -12,6 +12,8 @@
 html,
 body {
     font-family: 'Montserrat', sans-serif;
+    min-width: 320px;
 }
 
 @import "./header";
+@import "./main-block";

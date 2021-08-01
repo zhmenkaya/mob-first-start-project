@@ -1,6 +1,8 @@
 .main {
-    background-color: silver;
+    background-image: url(./../images/main-bg.jpg);
     color: $primaryColor;
+    background-size: cover;
+    background-position: center;
     .container {
         @extend %container;
     }
@@ -9,6 +11,9 @@
         flex-direction: column;
         justify-content: center;
         height: 655px;
+        @media screen and (min-width:768px) {
+            height: 839px;           
+        }
     }
     &__title{
         @include text(32px, 700, 39px, $primaryColor); 
@@ -16,6 +21,12 @@
         margin-top: -6px;
         span {
             color: $accentColor;
+        }
+        @include media(sm) {
+            max-width: 544px; 
+        }
+        @include media(md) {
+            max-width: 724px;
         }
     }
     &__price-box {

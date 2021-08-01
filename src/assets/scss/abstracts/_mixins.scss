@@ -4,3 +4,21 @@
     line-height: $lineHeight;
     color: $color;
 }
+
+@mixin media($width, $type:min) {
+    @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+    $width: $width - 1px;
+    }
+    }
+    @media (#{$type}-width: $width) {
+    @content;
+    }
+    }
+
+    $breakpoints: (
+        xs: 576px,
+        sm: 768px,
+        md: 1280px
+    )
