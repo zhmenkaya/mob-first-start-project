@@ -10,7 +10,6 @@
     }
     &__title{
         @include text(28px, 400, 34px, $textColor);
-        text-align: center;
         margin-bottom: 13px;
         max-width: 197px;
 
