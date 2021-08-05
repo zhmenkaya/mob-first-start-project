@@ -40,3 +40,123 @@
     }
 
 }
+
+// #full-stars-example {
+
+//     /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+//     .rating-group {
+//       display: inline-flex;
+//     }
+    
+//     /* make hover effect work properly in IE */
+//     .rating__icon {
+//       pointer-events: none;
+//     }
+    
+//     /* hide radio inputs */
+//     .rating__input {
+//      position: absolute !important;
+//      left: -9999px !important;
+//     }
+  
+//     /* set icon padding and size */
+//     .rating__label {
+//       cursor: pointer;
+//       padding: 0 0.1em;
+//       font-size: 2rem;
+//     }
+    
+//     /* set default star color */
+//     .rating__icon--star {
+//       color: orange;
+//     }
+    
+//     /* set color of none icon when unchecked */
+//     .rating__icon--none {
+//       color: #eee;
+//     }
+  
+//     /* if none icon is checked, make it red */
+//     .rating__input--none:checked + .rating__label .rating__icon--none {
+//       color: red;
+//     }
+  
+//     /* if any input is checked, make its following siblings grey */
+//     .rating__input:checked ~ .rating__label .rating__icon--star {
+//       color: #ddd;
+//     }
+  
+//     /* make all stars orange on rating group hover */
+//     .rating-group:hover .rating__label .rating__icon--star {
+//       color: orange;
+//     }
+  
+//     /* make hovered input's following siblings grey on hover */
+//     .rating__input:hover ~ .rating__label .rating__icon--star {
+//       color: #ddd;
+//     }
+    
+//     /* make none icon grey on rating group hover */
+//     .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
+//        color: #eee;
+//     }
+  
+//     /* make none icon red on hover */
+//     .rating__input--none:hover + .rating__label .rating__icon--none {
+//       color: red;
+//     }
+//   }
+
+.form{}
+.form_margin{
+    margin: 0 0 30px 0;
+}
+.form__item{
+    margin: 0 0 30px 0;
+}
+.form__label{
+    margin: 0 0 10px 0;
+}
+.form__btn{
+    height: 50px;
+    background-color: #77608d;
+    padding: 0 30px;
+    color:#fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.simple-rating{
+    position: relative;
+    font-size: 40px;
+    display: inline-block;
+}
+.simple-rating::before{
+    content:"\2605\2605\2605\2605\2605";
+    display: block;
+    color:#FC9B09;
+}
+.simple-rating__items{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+.simple-rating__item{
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+}
+.simple-rating__label{
+    flex: 0 0 20%;
+    height: 100%;
+    cursor: pointer;
+}
