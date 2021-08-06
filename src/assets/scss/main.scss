@@ -15,6 +15,10 @@ body {
     min-width: 320px;
 }
 
+a{
+    text-decoration: none;
+}
+
 @import "./header";
 @import "./main-block";
 @import "./photosession";
