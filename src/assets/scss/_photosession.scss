@@ -11,7 +11,8 @@
     &__title{
         @include text(28px, 400, 34px, $textColor);
         margin-bottom: 13px;
-        max-width: 197px;
+        text-align: center;
+        // max-width: 197px;
 
     }
     &__img{
@@ -22,6 +23,10 @@
     &__text{
         @include text(14px, 400, 20px, $textColor);
         margin: 30px 0 31px;
+        @include media(xs) {
+            @include text(18px, 400, 26px, $textColor);
+            margin: 30px 0 25px;
+        }
     }
     &__list{
         @include text(14px, 500, 20px, $textColor);
@@ -31,123 +36,78 @@
         margin-bottom: 27px;
         display: flex;
         align-items: center;
-        &:last-child{
-            margin-bottom: none;
+        @include media(xs) {
+            margin-bottom: 33px;
+        }
+    }
+    &__item:last-child{
+        @include media(xs) {
+            margin-bottom: 71px;
         }
     }
     &__icon{
         margin-right: 17px;
     }
-
-}
-
-.form{}
-.form_margin{
-    // margin: 14px 0;
-}
-.form__item{
-    margin: 14px 0 14px 64px;
-    position: relative;
-}
-.form__item::before{
-    content: url("./../images/rating-cubok.svg");
-    position: absolute;
-    width: 37px;
-    height: 41px;
-    top: 3px;
-    left: -51px;
-}
-
-.form__label{
-    position: relative;
-}
-.form__label::before{
-    content:"";
-    width: 290px;
-    height: 1px;
-    background-color: #C7C7C7;
-    position: absolute;
-    top: -14px;
-    left: -55px;
-}
-.form__label::after{
-    content:"";
-    width: 290px;
-    height: 1px;
-    background-color: #C7C7C7;
-    position: absolute;
-    top: 54px;
-    left: -55px;
-}
-.form__link-label{
-    color:#37373F;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-}
-.form__btn{
-    height: 50px;
-    background-color: #77608d;
-    padding: 0 30px;
-    color:#fff;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.simple-rating{
-    position: relative;
-    font-size: 18px;
-    display: inline-block;
-}
-.simple-rating::before{
-    content:"★★★★★";
-    display: block;
-    color: white;
+    &__form{
+        // margin: 14px 0;
+    }
+    &__form-item{
+        margin: 14px 0 14px 48px;
+        position: relative;
+        @include media(xs) {
+            display: flex;
+            margin: 32px 0 29px 48px;
+        }
+    }
+    &__form-item::before{
+        content: url("./../images/rating-cubok.svg");
+        position: absolute;
+        width: 37px;
+        height: 41px;
+        top: -2px;
+        left: -44px;
+        @include media(xs) {
+            width: 27px;
+            height: 37px;
+            top: -20px;
+        }
+    }
     
-}
-.simple-rating__items{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: row-reverse;
-    overflow: hidden;
-}
-.simple-rating__item{
-    position: absolute;
-    width: 0%;
-    height: 0%;
-    opacity: 0;
-    visibility: hidden;
-    top: 0;
-    left: 0;
-}
-.simple-rating__label{
-    flex: 0 0 20%;
-    height: 100%;
-    cursor: pointer;
-}
-
-.simple-rating__label::before{
-    content: "★";
-    display: block;
-    transition: color 0.3s ease  0s;
-    -webkit-transition: color 0.3s ease  0s;
-    -moz-transition: color 0.3s ease  0s;
-    -ms-transition: color 0.3s ease  0s;
-    -o-transition: color 0.3s ease  0s;
-}
-
-.simple-rating__item:checked,
-.simple-rating__item:checked ~ .simple-rating__label{
-    color:#FC9B09;
-}
-
-
-.simple-rating__label:hover,
-.simple-rating__label ~ .simple-rating__label,
-.simple-rating__label:checked ~ .simple-rating__label:hover{
-    color:#fac06a;
+    &__form-label{
+        position: relative;
+        @include media(xs) {
+            margin-right: 14px;
+        }
+    }
+    &__form-label::before{
+        content:"";
+        width: 290px;
+        height: 1px;
+        background-color: #C7C7C7;
+        position: absolute;
+        top: -14px;
+        left: -55px;
+        @include media(xs) {
+            width: 506px;
+            top: -37px;
+        }
+    }
+    &__form-label::after{
+        content:"";
+        width: 290px;
+        height: 1px;
+        background-color: #C7C7C7;
+        position: absolute;
+        top: 54px;
+        left: -55px;
+        @include media(xs) {
+            width: 506px;
+        }
+    }
+    &__link-label{
+        @include text(14px, 400, 20px, $textColor);
+        @include media(xs) {
+            @include text(18px, 400, 26px, $textColor);
+        }
+    }
 }
