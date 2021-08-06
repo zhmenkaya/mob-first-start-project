@@ -1,5 +1,8 @@
 .photosession{
     margin-top: 39px;
+    @include media(sm) {
+        margin-top: 50px;
+    }
     .container {
         @extend %container;
     }
@@ -12,7 +15,12 @@
         @include text(28px, 400, 34px, $textColor);
         margin-bottom: 13px;
         text-align: center;
-        // max-width: 197px;
+        max-width: 197px;
+        @include media(sm) {
+            @include text(40px, 500, 49px, $textColor);
+            margin-bottom: 40px;
+            max-width: 250px;
+        }
 
     }
     &__img{
@@ -25,7 +33,11 @@
         margin: 30px 0 31px;
         @include media(xs) {
             @include text(18px, 400, 26px, $textColor);
-            margin: 30px 0 25px;
+            margin: 30px 0 29px;
+        }
+        @include media(sm) {
+            margin-top: 46px;
+            max-width: 549px;
         }
     }
     &__list{
