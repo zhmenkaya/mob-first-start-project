@@ -5,11 +5,32 @@
     }
     .container {
         @extend %container;
+        padding: 0;
     }
     &__inner{
         display: grid;
         grid-template-columns: 1fr;
         // grid-template-rows: 67px 437px 1fr;
+        @include media(md) {
+            grid-template-columns: 50% 50%;
+            // grid-template-rows: 89px 50%;
+            // gap:37px;
+        }
+    }
+    &__row-1{
+        @include media(md) {
+            grid-area: 1/1/2/2;
+        }
+    }
+    &__row-2{
+        @include media(md) {
+            grid-area: 1/2/3/3;
+        }
+    }
+    &__row-3{
+        @include media(md) {
+            grid-area: 2/1/3/2;
+        }
     }
     &__title{
         @include text(28px, 400, 34px, $textColor);
@@ -21,12 +42,20 @@
             margin-bottom: 40px;
             max-width: 250px;
         }
+        @include media(md) {
+            margin-bottom: 18px;
+            max-width: 250px;
+            text-align:left;
+        }
 
     }
     &__img{
         width: 100%;
         object-fit: cover;
         object-position: center;
+        @include media(md) {
+            height: 75%;
+        }
     }
     &__text{
         @include text(14px, 400, 20px, $textColor);
@@ -38,6 +67,11 @@
         @include media(sm) {
             margin-top: 46px;
             max-width: 549px;
+        }
+        @include media(md) {
+            margin: 0 0 29px 0;
+            max-width: 549px;
+            text-align:left;
         }
     }
     &__list{
@@ -102,7 +136,15 @@
         @include media(xs) {
             width: 506px;
             top: -37px;
+            left: -40px;
         }
+        @include media(sm) {
+            width: 666px;
+        }
+        @include media(md) {
+            width: 560px;
+        }
+
     }
     &__form-label::after{
         content:"";
@@ -114,6 +156,13 @@
         left: -55px;
         @include media(xs) {
             width: 506px;
+            left: -40px;
+        }
+        @include media(sm) {
+            width: 666px;
+        }
+        @include media(md) {
+            width: 560px;
         }
     }
     &__link-label{
