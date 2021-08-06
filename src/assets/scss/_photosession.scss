@@ -5,12 +5,13 @@
     }
     .container {
         @extend %container;
+        @include media(md) {
         padding: 0;
+        }
     }
     &__inner{
         display: grid;
         grid-template-columns: 1fr;
-        // grid-template-rows: 67px 437px 1fr;
         @include media(md) {
             grid-template-columns: 50% 50%;
             // grid-template-rows: 89px 50%;
