@@ -1,0 +1,31 @@
+.gallery{
+    .container{
+        @extend %container;
+    }
+    &__inner{
+        display: flex;
+        flex-direction: column;
+    }
+    &__wrap-title{
+        max-width: 265px;
+    }
+    &__title{
+        @include text(26px, 400, 32px, $textColor);
+        text-align: center;
+        margin: 60px 0 32px;
+    }
+    &__cards{
+        max-width: 277px;
+        max-height: 185px;
+        display: flex;
+        // grid-template-columns: 1fr;
+        // grid-template-rows: 1fr;
+        overflow-x: scroll;
+    }
+    &__card{
+        margin-right: 15px;
+    }
+    &__card:last-child{
+        margin-right: 0;
+    }
+}
