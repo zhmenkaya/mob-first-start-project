@@ -41,6 +41,8 @@
         @include media(sm) {
             overflow-x: none;
             flex-wrap: wrap;
+            max-width: 564px;
+            margin: 0 auto;
         }
     }
     &__card{
@@ -53,6 +55,7 @@
         }
         @include media(sm) {
             margin-right: 10px;
+            flex: 0 1 calc(100% / 2);
         }
     }
     &__card:last-child{

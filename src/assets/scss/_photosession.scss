@@ -19,6 +19,7 @@
         }
     }
     &__row-1{
+        margin: 0 auto;
         @include media(md) {
             grid-area: 1/1/2/2;
         }
