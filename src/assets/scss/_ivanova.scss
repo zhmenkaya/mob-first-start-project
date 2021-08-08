@@ -1,0 +1,20 @@
+.ivanova{
+    .container{
+        @extend %container;
+    }
+    &__wrap-img{
+        margin-bottom: 23px;
+        min-width: 139px;
+    }
+    &__img{
+        width: 100%;
+    }
+    &__name-title{
+        text-align: center;
+        margin-bottom: 7px;
+    }
+    &__profession{
+        text-align: center;
+        margin-bottom: 7px;
+    }
+}

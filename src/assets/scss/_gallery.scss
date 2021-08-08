@@ -35,6 +35,7 @@
         width: 100%;
         flex-wrap: nowrap;
         overflow-x: scroll;
+        margin-bottom: 63px;
         @include media(xs) {
             padding-left: 35px;
         }
