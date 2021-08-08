@@ -64,5 +64,11 @@
     &__img{
         width: 100%;
     }
-    
+    &__botton{
+        margin: 45px auto 27px;
+        display: none;
+        @include media(sm) {
+            display: block;
+        }
+    }
 }
