@@ -3,18 +3,28 @@
         @extend %container;
     }
     &__wrap-img{
-        margin-bottom: 23px;
+        margin:0 auto  23px;
         min-width: 139px;
     }
     &__img{
-        width: 100%;
+        max-width: 100%;
     }
     &__name-title{
+        @include text(18px, 500, 22px, $textColor);
         text-align: center;
         margin-bottom: 7px;
     }
     &__profession{
+        @include text(14px, 400, 21px, $textColor);
         text-align: center;
         margin-bottom: 7px;
     }
+    &__name-link{
+        display: block;
+        @include text(14px, 500, 21px, $linkColor);
+        text-align: center;
+        margin: 0 auto 25px;
+        max-width: 228px;
+    }
 }
+
