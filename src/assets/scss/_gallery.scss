@@ -41,7 +41,8 @@
         }
         @include media(sm) {
             overflow-x: none;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             max-width: 564px;
             margin: 0 auto;
         }
@@ -56,7 +57,7 @@
         }
         @include media(sm) {
             margin-right: 10px;
-            flex: 0 1 calc(100% / 2);
+            // flex: 0 1 calc(100% / 2);
         }
     }
     &__card:last-child{
