@@ -11,7 +11,7 @@
         max-width: 265px;
         margin: 0 auto;
         @include media(sm) {
-            margin-left: 51px
+            margin-left: -51px
         }
     }
     &__title{
