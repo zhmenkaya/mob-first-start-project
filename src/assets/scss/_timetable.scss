@@ -12,4 +12,19 @@
         display: grid;
         grid-template-columns: 1fr;
     }
+    &__row{
+        border: 1px solid $secondaryColor;
+    }
+    &__btn{
+        display: block;
+        width: 129px;
+        height: 50px;
+        border: 2px solid $accentColor;
+        border-radius: 3px;
+        @include text(14px, 500, 17px, $accentColor);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
 }
