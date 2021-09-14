@@ -11,16 +11,19 @@
     &__wrap{
         display: grid;
         grid-template-columns: 1fr;
+        // grid-template-rows: 40px 220px 220px 100px;
     }
     &__row{
         border: 1px solid $secondaryColor;
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
-        // justify-content: left;       
+        &:first-child{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }     
     }
     &__list{
-        padding: 30px 10px;
+        padding: 30px 20px 20px;
     }
     &__item{
         list-style-type: none;
@@ -37,6 +40,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 30px;
+        margin: 20px 0 30px 20px;
     }
 }
