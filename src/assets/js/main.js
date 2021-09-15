@@ -1,3 +1,11 @@
-console.log(test(5, 2));
-console.log(test(2, 4));
-console.log(test(9, 1));
+// $(".slider").slick({
+//     slidesToShow: 1,
+//     dots: true,
+//     arrows: true
+// });
+
+$(document).ready(function(){
+    $('.slider').slick({
+        slidesToShow: 1
+    });
+  });
