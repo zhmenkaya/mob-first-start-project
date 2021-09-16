@@ -75,4 +75,26 @@
         margin-bottom: 44px;
         border-bottom: 0.5px solid $secondaryColor;
     }
+    &__row-8{
+        grid-area: 7/1/10/2;
+        margin-top: 40px;
+    }
+    &__row-9{
+        grid-area: 7/2/8/3;
+    }
+    &__row-10{
+        grid-area: 8/2/9/3;
+    }
+    &__row-11{
+        grid-area: 9/2/10/3;
+    }
+    &__row-12{
+        grid-area: 10/1/11/3;
+    }
+    &__row-13{
+        grid-area: 11/1/12/3;
+    }
+    &__row-14{
+        grid-area: 12/1/13/3;
+    }
 }
