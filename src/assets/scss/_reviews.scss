@@ -1,0 +1,25 @@
+.reviews{
+    .container{
+        @extend %container;
+    }
+    &__grid-rows{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border: 1px solid;
+    }
+    &__row-1{
+        grid-area: 1/1/4/2;
+    }
+    &__row-2{
+        grid-area: 1/2/2/3;
+    }
+    &__name-title{
+        @include text(16px, 500, 20px, $textColor);
+    }
+    &__row-3{
+        grid-area: 2/2/2/3;
+    }
+    &__profession{
+        @include text(14px, 400, 21px, $textColor);
+    }
+}
