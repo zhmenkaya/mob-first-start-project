@@ -1,5 +1,12 @@
 .faq{
-    &__slider{
+    &__slider{}
+    &__wrap{
+        max-width: 274px;
+        margin: 0 auto;
+        border: 1px solid $secondaryColor;
+        margin-top: 52px;
+    }
+    &__inner{
         display: flex;
         flex-direction: column;
     }

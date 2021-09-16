@@ -6,6 +6,8 @@
 
 $(document).ready(function(){
     $('.slider').slick({
-        slidesToShow: 1
+        slidesToShow: 1,
+        arrow:true,
+        dots:true
     });
   });
