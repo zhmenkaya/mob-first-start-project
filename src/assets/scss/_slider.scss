@@ -1,11 +1,9 @@
 .slider{
-    
     display: flex;
     position: relative;
     max-width: 331px;
-    // background-color:pink;
+    background-color: #fff;
     margin: 0 auto;
-    // min-width: 0;
     &__item{
         min-width: 274px;
     }
@@ -121,9 +119,11 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-.slider .slick-dots li .slick-active button{
+
+.slider .slick-dots li.slick-active button {
     background-color:$accentColor;
 }
+
 #slick-slide-control00{
     display: none;
 }
