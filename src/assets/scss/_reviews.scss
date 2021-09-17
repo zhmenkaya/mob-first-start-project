@@ -72,8 +72,18 @@
     }
     &__date{
         @include text(14px, 400, 21px, $textColorLight);
-        margin-bottom: 44px;
-        border-bottom: 0.5px solid $secondaryColor;
+        margin-bottom: 74px;
+        position: relative;
+        &::after{
+            content:"";
+            display: block;
+            width: 290px;
+            height: 0.5px;
+            background-color: $secondaryColor;
+            position: absolute;
+            top: 56px;
+            left: 0;
+        }
     }
     &__row-8{
         grid-area: 7/1/10/2;
