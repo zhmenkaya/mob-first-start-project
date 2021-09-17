@@ -9,8 +9,6 @@
     &__grid-rows{
         display: grid;
         grid-template-columns: 35% 65%;
-        // border: 1px solid;
-
     }
     &__row-1{
         grid-area: 1/1/4/2;
@@ -126,9 +124,6 @@
         @include media(xs) {
             display: block;
             grid-area: 14/2/15/3;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
         }
     }
     &__row-18{
@@ -157,6 +152,19 @@
         @include media(xs) {
             display: block;
             grid-area: 19/1/20/3;
+        }
+    }
+    &__link{
+        @include text(17px, 500, 25px, $linkColor);
+        display: block;
+        text-decoration: none;
+        margin: 0 auto 84px;
+        position: relative;
+        &::after{
+            content:url(./../images/arrow-right.svg);
+            position: absolute;
+            top: 0;
+            right: 100px;
         }
     }
 }
