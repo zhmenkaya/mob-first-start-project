@@ -42,9 +42,9 @@
     &__text{
         @include text(16px, 500, 24px, $textColor);
         margin-bottom: 22px;
-        max-width: 290px;
+        // max-width: 290px;
         @include media(xs) {
-            max-width: 505px;
+            // max-width: 505px;
         }
     }
     &__more-link{
