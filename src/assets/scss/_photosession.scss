@@ -1,5 +1,5 @@
 .photosession{
-    margin-top: 39px;
+    margin-top: 34px;
     @include media(sm) {
         margin-top: 50px;
     }
@@ -81,7 +81,7 @@
     }
     &__item{
         list-style-type: none;
-        margin-bottom: 27px;
+        margin-bottom: 20px;
         display: flex;
         align-items: center;
         @include media(xs) {
@@ -94,7 +94,7 @@
         }
     }
     &__icon{
-        margin-right: 17px;
+        margin-right: 9px;
     }
     &__form{
         // margin: 14px 0;
@@ -112,8 +112,8 @@
         position: absolute;
         width: 37px;
         height: 41px;
-        top: -2px;
-        left: -44px;
+        top: 0;
+        left: -48px;
         @include media(xs) {
             width: 27px;
             height: 37px;
@@ -172,5 +172,8 @@
         @include media(xs) {
             @include text(18px, 400, 26px, $textColor);
         }
+    }
+    &__rating-inner{
+        margin-top: 55px;
     }
 }
