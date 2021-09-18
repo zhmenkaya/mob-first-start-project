@@ -4,14 +4,14 @@
     }
     &__wrap-img{
         text-align: center;
-        margin-bottom: 23px;
+        margin-bottom: 20px;
         min-width: 139px;
         position: relative;
         &::after{
             content: url(./../images/heart-orange.svg);
             position: absolute;
-            top: 0;
-            right: -7px;
+            top: -12px;
+            right: -1px;
         }
     }
 
