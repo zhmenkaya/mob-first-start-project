@@ -43,6 +43,9 @@
         @include text(16px, 500, 24px, $textColor);
         margin-bottom: 22px;
         max-width: 290px;
+        @include media(xs) {
+            max-width: 505px;
+        }
     }
     &__more-link{
         display: block;
