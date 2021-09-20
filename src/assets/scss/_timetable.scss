@@ -34,6 +34,9 @@
         list-style-type: none;
         @include text(18px, 400, 26px, $textColor);
         margin-bottom: 10px;
+        &:nth-child(2){
+            font-weight: 600;
+        }
     }
     &__btn{
         display: block;
@@ -52,7 +55,7 @@
     }
     &__form{}
     &__form-item{
-        margin: 14px 0 14px 48px;
+        margin: 28px 0 14px 66px;
         position: relative;
         @include media(xs) {
             display: flex;
@@ -64,8 +67,8 @@
         position: absolute;
         width: 37px;
         height: 41px;
-        top: -2px;
-        left: -44px;
+        top: 1px;
+        left: -49px;
         @include media(xs) {
             width: 27px;
             height: 37px;
@@ -80,7 +83,9 @@
         }
     }
     &__link-label{
-        @include text(14px, 400, 20px, $textColor);
+        @include text(13px, 400, 19px, $textColor);
+        display: inline-block;
+        // margin: 15px 0 0 10px;
         @include media(xs) {
             @include text(18px, 400, 26px, $textColor);
         }
