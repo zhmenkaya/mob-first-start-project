@@ -4,7 +4,7 @@
         max-width: 274px;
         margin: 0 auto;
         border: 1px solid $secondaryColor;
-        margin-top: 52px;
+        margin-top: 46px;
     }
     &__inner{
         display: flex;
@@ -18,7 +18,7 @@
     }
     &__wrap-img{
         text-align: center;
-        margin: 0 10px 23px 0;
+        margin: 0 18px 23px 0;
         max-width: 67px;
     }
     &__img{
@@ -35,12 +35,12 @@
     &__profession{
         @include text(14px, 400, 21px, $textColor);
         text-align: left;
-        margin-bottom: 7px;
+        margin-bottom: 2px;
     }
     &__name-link{
         display: block;
         @include text(14px, 500, 21px, $linkColor);
         text-align: left;
-        margin: 0 auto 20px;
+        margin: 0 auto 10px;
     }
 }
