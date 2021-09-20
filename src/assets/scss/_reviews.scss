@@ -3,8 +3,9 @@
         @extend %container;
     }
     &__title{
-        @include text(26px, 400, 152px, $textColor);
+        @include text(26px, 400, 142px, $textColor);
         text-align: center;
+        margin-top: -16px;
     }
     &__grid-rows{
         display: grid;
@@ -12,10 +13,11 @@
     }
     &__row-1{
         grid-area: 1/1/4/2;
+        overflow: hidden;
     }
     &__wrap-img{
         text-align: center;
-        max-width: 84px;
+        max-width: 80px;
     }
     &__img{
         max-width: 100%;
@@ -32,18 +34,18 @@
     }
     &__profession{
         @include text(14px, 400, 21px, $textColor);
-        margin-bottom: 7px;
+        margin-bottom: 5px;
     }
     &__row-4{
         grid-area: 3/2/4/3;
-        margin-bottom: 31px;
+        margin-bottom: 16px;
     } 
     &__row-5{
         grid-area: 4/1/5/3;
     }
     &__evaluation{
         @include text(14px, 400, 21px, $textColorLight);
-        padding-left: 16px;
+        padding-left: 18px;
         margin-bottom: 14px;
         position: relative;
         &::before{
@@ -63,7 +65,7 @@
     }
     &__text{
         @include text(14px, 400, 21px, $textColor);
-        margin-bottom: 17px;
+        margin-bottom: 39px;
     }
     &__row-7{
         grid-area: 6/1/7/3;
@@ -79,13 +81,13 @@
             height: 0.5px;
             background-color: $secondaryColor;
             position: absolute;
-            top: 56px;
+            top: 57px;
             left: 0;
         }
     }
     &__row-8{
         grid-area: 7/1/10/2;
-        margin-top: 40px;
+        margin-top: -5px;
     }
     &__row-9{
         grid-area: 7/2/8/3;
@@ -95,12 +97,14 @@
     }
     &__row-11{
         grid-area: 9/2/10/3;
+        margin-bottom: 15px;
     }
     &__row-12{
         grid-area: 10/1/11/3;
     }
     &__row-13{
         grid-area: 11/1/12/3;
+        margin-bottom: -18px;
     }
     &__row-14{
         grid-area: 12/1/13/3;
@@ -154,17 +158,21 @@
             grid-area: 19/1/20/3;
         }
     }
+    &__row-22{
+        grid-area: 20/1/21/3;
+        text-align: center;
+    }
     &__link{
         @include text(17px, 500, 25px, $linkColor);
-        display: block;
+        text-align: center;
         text-decoration: none;
-        margin: 0 auto 84px;
+        // margin: 0 auto 84px;
         position: relative;
         &::after{
             content:url(./../images/arrow-right.svg);
             position: absolute;
             top: 0;
-            right: 100px;
+            right: -8px;
         }
-    }
+    }                                                                                                                                                                                                                                                                                                                           
 }
