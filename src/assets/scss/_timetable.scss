@@ -41,12 +41,17 @@
                 }
             }
         }
-        &:nth-child(2){
-            @include media(xs) {
-                flex-direction: row;
-                background-color: pink;
-            } 
+        &:last-child, &:nth-child(2),&:nth-child(3){
+            border-top: none;
         }
+        &:nth-child(3){
+            border-bottom: none;
+        }
+        &:last-child{
+            padding-top: 60px;
+        }
+
+
     }    
     &__meeting-day{
         @include text(18px, 400, 26px, $textColor);
@@ -55,6 +60,15 @@
         }
     }    
     
+    &__list-wrap{
+        @include media(xs){
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            justify-content: space-between;
+        } 
+
+    }
     &__list{
         padding: 26px 19px 5px;
     }
@@ -77,6 +91,9 @@
         align-items: center;
         justify-content: center;
         margin: 0 0 30px 20px;
+        @include media(xs){
+            margin-right: 20px;
+        }
     }
     &__icon{
         margin-right: 17px;
@@ -87,7 +104,7 @@
         position: relative;
         @include media(xs) {
             display: flex;
-            margin: 32px 0 29px 48px;
+            // margin: 32px 0 29px 48px;
         }
     }
     &__form-item::before{
