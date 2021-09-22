@@ -44,7 +44,7 @@
         display: flex;
         flex-direction: column;
     }
-    &__priceLabel{
+    &__price-label{
         @include text(18px, 400, inherit,inherit);   
     }
     &__price {
