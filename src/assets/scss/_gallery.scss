@@ -46,6 +46,13 @@
             max-width: 564px;
             margin: 0 auto;
         }
+        @include media(md) {
+            overflow-x: none;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
     }
     &__card{
         margin-right: 15px;
