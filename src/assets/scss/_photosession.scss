@@ -5,9 +5,9 @@
     }
     .container {
         @extend %container;
-        @include media(md) {
-        padding: 0;
-        }
+        // @include media(md) {
+        // padding: 0;
+        // }
     }
     &__inner{
         display: grid;
