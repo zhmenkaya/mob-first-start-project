@@ -88,6 +88,7 @@
     background-image: url(./../images/slider-arrow-l.png);
     background-size: 100%;
     background-repeat: no-repeat;
+    background-color: $primaryColor;
     border: none;
 }
 .slider .slick-arrow.slick-next{
@@ -95,6 +96,7 @@
     background-image: url(./../images/slider-arrow-r.png);
     background-size: 100%;
     background-repeat: no-repeat;
+    background-color: $primaryColor;
     border:none;
 }
 
