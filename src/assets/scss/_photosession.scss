@@ -144,7 +144,8 @@
             width: 666px;
         }
         @include media(md) {
-            width: 560px;
+            width: 518px;
+            left: -54px;
         }
 
     }
@@ -164,7 +165,8 @@
             width: 666px;
         }
         @include media(md) {
-            width: 560px;
+            width: 518px;
+            left: -54px;
         }
     }
     &__link-label{
