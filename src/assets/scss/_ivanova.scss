@@ -2,6 +2,13 @@
     .container{
         @extend %container;
     }
+    &__wrap{
+        @include media(md) {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+    }
     &__wrap-img{
         text-align: center;
         margin-bottom: 20px;
@@ -12,6 +19,26 @@
             position: absolute;
             top: -12px;
             right: -1px;
+            @include media(xs) {
+                right: 100px;
+            }
+            @include media(sm) {
+                right: 200px;
+            }
+            @include media(md) {
+                right: -10px;
+            }
+        }
+    }
+    &__info-block-top{
+        @include media(md) {
+            max-width:584px;
+            margin: 0 auto;
+        }
+    }
+    &__info-block{
+        @include media(md) {
+            max-width:550px;
         }
     }
 
