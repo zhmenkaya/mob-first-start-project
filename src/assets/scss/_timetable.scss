@@ -15,8 +15,10 @@
             content:":";
             position:absolute;
             right: 107px;
+            @include media(sm) {
+                left:218px;
+            }
         }
-
     }
     &__wrap{
         display: grid;
@@ -25,6 +27,9 @@
         margin-bottom: 45px;
         @include media(xs) {
             grid-template-rows: 74px 130px 130px 172px;
+        }
+        @include media(md) {
+            grid-template-columns: 770px;
         }
     }
     &__row{
