@@ -7,7 +7,7 @@
             margin:0 auto;
         }
         @include media(md) {
-            max-width: 100%;
+            max-width: 1040px;
         }    
     }
     &__wrap-title{
@@ -17,7 +17,7 @@
             margin-left: -51px;
         }
         @include media(md) {
-            margin-left: 70px;
+            margin-left: 0px;
         }  
     }
     &__title{
@@ -56,7 +56,7 @@
         @include media(md) {
             overflow:hidden;
             grid-template-columns: repeat(4, 1fr);
-            max-width: 1140px;
+            max-width: 1040px;
             margin: 0 auto;
             
         }
@@ -72,6 +72,9 @@
         @include media(sm) {
             margin:0 10px 10px 0;
             
+        }
+        @include media(md) {
+            min-width: 248px;
         }
     }
     &__card:last-child{
