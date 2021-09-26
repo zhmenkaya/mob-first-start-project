@@ -136,15 +136,22 @@
     &__row-13{
         grid-area: 11/1/12/3;
         margin-bottom: -18px;
+        @include media(sm) {
+            grid-area: 11/2/12/4;
+        }
     }
     &__row-14{
         grid-area: 12/1/13/3;
+        @include media(sm) {
+            grid-area: 13/2/14/4;
+        }
     }
     &__row-15{
         display: none;
         @include media(xs) {
             display: block;
             grid-area: 13/1/16/2;
+            margin-top: 95px;
         }
     }
     &__row-16{
@@ -152,6 +159,7 @@
         @include media(xs) {
             display: block;
             grid-area: 13/2/14/3;
+            margin-top: 95px;
         }
     }
     &__row-17{
@@ -174,12 +182,18 @@
             display: block;
             grid-area: 17/1/18/3;
         }
+        @include media(sm) {
+            grid-area: 15/3/16/4;
+        }
     }
     &__row-20{
         display: none;
         @include media(xs) {
             display: block;
             grid-area: 18/1/19/3;
+        }
+        @include media(sm) {
+            grid-area: 19/2/20/4;
         }
     }
     &__row-21{
@@ -188,10 +202,16 @@
             display: block;
             grid-area: 19/1/20/3;
         }
+        @include media(sm) {
+            grid-area: 21/2/22/4;
+        }
     }
     &__row-22{
         grid-area: 20/1/21/3;
         text-align: center;
+        @include media(sm) {
+            grid-area: 23/2/24/4;
+        }
     }
     &__link{
         @include text(17px, 500, 25px, $linkColor);
