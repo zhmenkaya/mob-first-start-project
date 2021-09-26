@@ -224,6 +224,19 @@
             position: absolute;
             top: 0;
             right: -8px;
+            @include media(sm) {
+                content:url(./../images/Arrow-down.svg);
+                top: -4px;
+                right: -15px;
+            }
+        }
+        &::before{
+            @include media(sm){
+                content:url(./../images/Arrow-down.svg);
+                position: absolute;
+                top: -5px;
+                left: -15px;
+            }
         }
     }                                                                                                                                                                                                                                                                                                                           
 }
