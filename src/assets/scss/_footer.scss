@@ -11,6 +11,9 @@
         @include media(xs) {
             grid-template-columns: 20% 55% 25%;
         }
+        @include media(md){
+            max-width: 866px;
+        }
     }
     &__item-1{
         margin-bottom: 49px;
@@ -41,6 +44,7 @@
         @include media(sm) {
             justify-content: end;
         }
+        
 
     }
     &__social-icon{
@@ -50,6 +54,9 @@
             @include media(sm){
                 margin-left: 0;
             }
+        }
+        @include media(md){
+            margin-top: 0;
         }
     }
     &__item-3{
@@ -73,13 +80,25 @@
             position: absolute;
             top: 10px;
             right: 0;
+            @include media(md){
+                top: 0;
+            }
         }
         @include media(xs) {
             grid-area: 2/3/3/4;
         }
+        @include media(md){
+            grid-area: 1/4/2/5;
+            align-items:flex-start;
+        }
+        
     }
     &__btn-lang{
         border: none;
+        @include media(md){
+            margin: 5px 0 0 30px;
+        }
+    
     }
     &__item-5{
         grid-area: 3/1/4/3;
