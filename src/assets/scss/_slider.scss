@@ -1,11 +1,14 @@
 .slider{
     display: flex;
+    flex-direction: column;
     position: relative;
-    max-width: 331px;
+    // max-width: 331px;
     background-color: #fff;
+    
     margin: 0 auto;
     &__item{
-        min-width: 274px;
+        min-width: 225px;
+        // border: 1px solid orange;
     }
     &__number{
         width: 66px;
@@ -21,6 +24,9 @@
         align-items: center;
         @include text(30px, 700, 44px, $primaryColor);
         margin: 52px auto 18px;
+        @include media(md) {
+            flex-direction: column;
+        }
     }
     &__question{
         @include text(16px, 500, 23px, $textColor);
@@ -34,20 +40,20 @@
     }
 }
 
-/* Слайдер */
-.slick-slider{}
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
-/* Ограничивающая оболочка */
-.slick-list {
-    overflow: hidden;
-}
-/* Лента слайдов */
-.slick-track{
-    display: flex;
-}
+// /* Слайдер */
+// .slick-slider{}
+// /* Слайдер запущен */
+// .slick-slider.slick-initialized{}
+// /* Слайдер с точками */
+// .slick-slider.slick-dotted{}
+// /* Ограничивающая оболочка */
+// .slick-list {
+//     overflow: hidden;
+// }
+// /* Лента слайдов */
+// .slick-track{
+//     display: flex;
+// }
 /* Слайд */
 .slick-slide00{}
 /* Слайд активный (показывается) */
@@ -81,33 +87,48 @@
     opacity: inherit;
     width: 10px;
     height: 30px;
+    @include media(md) {
+        display: none;
+    }
 
 }
 .slider .slick-arrow.slick-prev{
-    left: 26px;
+    left: 1px;
     background-image: url(./../images/slider-arrow-l.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: $primaryColor;
     border: none;
+    @include media(md) {
+        display: none;
+    }
 }
 .slider .slick-arrow.slick-next{
-    right: 16px;
+    right: 1px;
     background-image: url(./../images/slider-arrow-r.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: $primaryColor;
     border:none;
+    @include media(md) {
+        display: none;
+    }
 }
 
 .slider .slick-dots{
     display: flex;
     justify-content: center;
     align-items: center;
+    @include media(md) {
+        display: none;
+    }
 }
 .slider .slick-dots li{
     list-style: none;
     margin: 0 6px;
+    @include media(md) {
+        display: none;
+    }
 }
 .slider .slick-dots li button{
     font-size: 0;
@@ -120,6 +141,9 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    @include media(md) {
+        display: none;
+    }
 }
 
 .slider .slick-dots li.slick-active button {

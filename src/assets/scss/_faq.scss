@@ -2,9 +2,8 @@
     &__slider{}
     &__wrap{
         max-width: 274px;
-        margin: 0 auto;
+        margin: 46px auto 0;
         border: 1px solid $secondaryColor;
-        margin-top: 46px;
     }
     &__inner{
         display: flex;
