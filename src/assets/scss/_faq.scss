@@ -4,6 +4,9 @@
         max-width: 274px;
         margin: 46px auto 0;
         border: 1px solid $secondaryColor;
+        @include media(xs) {
+            max-width: 400px;
+        }
     }
     &__inner{
         display: flex;
