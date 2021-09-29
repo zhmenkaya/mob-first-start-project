@@ -8,6 +8,11 @@
     margin: 0 auto;
     &__item{
         min-width: 225px;
+        @include media(md) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
         // border: 1px solid orange;
     }
     &__number{
@@ -25,18 +30,29 @@
         @include text(30px, 700, 44px, $primaryColor);
         margin: 52px auto 18px;
         @include media(md) {
-            flex-direction: column;
+            width: 61px;
+            height: 61px;
+            @include text(35px, 700, 51px, $primaryColor);
+            margin-right: 18px;
         }
     }
     &__question{
         @include text(16px, 500, 23px, $textColor);
         text-align: center;
         margin-bottom:5px; 
+        @include media(md){
+            @include text(18px, 500, 27px, $textColor);
+            text-align: start;
+        }
     }
     &__answer{
         @include text(14px, 400, 20px, $textColor);
         text-align: center;
         margin-bottom: 12px;
+        @include media(md){
+            @include text(18px, 400, 26px, $textColor);
+            text-align: start;
+        }
     }
 }
 
