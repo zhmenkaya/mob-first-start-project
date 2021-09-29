@@ -7,6 +7,9 @@
         @include media(xs) {
             max-width: 400px;
         }
+        @include media(md){
+            max-width: 420px;
+        }
     }
     &__inner{
         display: flex;
@@ -17,6 +20,9 @@
         justify-content: space-around;
         min-width: 212px;
         margin: 40px auto 0;
+        @include media(md){
+            margin: 41px auto 58px 30px;
+        }
     }
     &__wrap-img{
         text-align: center;
@@ -28,21 +34,36 @@
     }
     &__info-block{
         max-width: 145px;
+        @include media(md){
+            min-width: 230px;
+        }
     }
     &__name-title{
         @include text(16px, 500, 20px, $textColor);
         text-align: left;
         margin-bottom: 5px;
+        @include media(md){
+            @include text(18px, 500, 22px, $textColor);
+        }
     }
     &__profession{
         @include text(14px, 400, 21px, $textColor);
         text-align: left;
         margin-bottom: 2px;
+        @include media(md){
+            @include text(16px, 400, 24px, $textColor);
+        }
+        
     }
     &__name-link{
         display: block;
         @include text(14px, 500, 21px, $linkColor);
         text-align: left;
         margin: 0 auto 10px;
+        @include media(md){
+            overflow: hidden;
+            height: 19px;
+            text-overflow: clip;
+        }
     }
 }
