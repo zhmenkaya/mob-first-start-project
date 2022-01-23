@@ -108,6 +108,7 @@
         align-items: center;
         justify-content: center;
         margin: 0 0 30px 20px;
+        cursor: pointer;
         @include media(xs){
             margin-right: 20px;
         }

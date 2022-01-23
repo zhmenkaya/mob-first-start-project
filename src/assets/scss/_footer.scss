@@ -50,6 +50,9 @@
     &__social-icon{
         margin-top: -6px;
         margin-left: 30px;
+        @media (max-width:359px) {
+            margin-left: 14px;
+        }
         &:first-child{
             @include media(sm){
                 margin-left: 0;

@@ -14,7 +14,7 @@
             max-width: 400px;
         }
         @include media(md){
-            max-width: 420px;
+            min-width: 420px;
             height: 469px;
         }
     }
@@ -26,10 +26,13 @@
         display: flex;
         justify-content: space-around;
         min-width: 212px;
-        margin: 40px auto 0;
+        margin: 0px auto 0;
         background-color: $primaryColor;
+        padding: 41px 0 58px 30px;
         @include media(md){
-            padding: 41px auto 58px 30px;
+            padding: 41px 0 16px 30px;
+            min-width: 415px;
+            justify-content: start;
         }
     }
     &__wrap-img{
